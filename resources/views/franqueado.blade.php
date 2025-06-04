@@ -73,7 +73,7 @@
                     <input type="Investimento" name="Investimento" id="Investimento" class="form-control" required>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Enviar Cadastro</button>
+                <button type="submit" class="btn btn-primary mt-3">Enviar Cadastro</button>
             </form>
         </div>
     </div>
