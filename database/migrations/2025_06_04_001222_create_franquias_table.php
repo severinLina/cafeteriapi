@@ -14,12 +14,12 @@ return new class extends Migration
         Schema::create('franquias', function (Blueprint $table) {
             $table->id();
             $table->string(column: 'nome');
-            $table->string(column: 'Cpf');
-            $table->string(column: 'Email');
-            $table->string(column: 'Celular');
-            $table->string(column: 'Estado');
-            $table->string(column: 'Cidade');
-            $table->string(column: 'Quanto espera investir?');
+            $table->string(column: 'cpf');
+            $table->string(column: 'email');
+            $table->string(column: 'celular');
+            $table->string(column: 'estado');
+            $table->string(column: 'cidade');
+            $table->string(column: 'investimento');
             $table->timestamps();
         });
     }
