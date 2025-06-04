@@ -2,6 +2,82 @@
 
 @section('content')
 
+@section('content')
+
+<section class="page-section">
+    <div class="container">
+        <div class="product-item">
+            <h2 class="section-heading mb-0">Cadastro de Franqueado</h2>
+            <p>Preencha os dados abaixo para se tornar um franqueado.</p>
+
+            <form action="{{ route('franqueado') }}" method="POST">
+                @csrf
+
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" id="cpf" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Celular:</label>
+                    <input type="text" name="telefone" id="telefone" class="form-control" required>
+                </div>
+                <label for="uf">Estado (UF):</label>
+<select name="uf" id="uf" class="form-control">
+    <option value="AC">Escolha uma opção</option>
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espírito Santo</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB">Paraíba</option>
+    <option value="PR">Paraná</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraima</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="SE">Sergipe</option>
+    <option value="TO">Tocantins</option>
+</select>
+</div>
+<div class="form-group">
+                    <label for="Cidade" style="color: white">Cidade:</label>
+                    <input type="Cidade" name="Cidade" id="Cidade" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="Investimento" style="color: white">Quanto espera Investir?:</label>
+                    <input type="Investimento" name="Investimento" id="Investimento" class="form-control" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar Cadastro</button>
+            </form>
+        </div>
+    </div>
+</section>
 <section class="page-section">
         <div class="container">
             <div class="product-item">
